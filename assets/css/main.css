@@ -130,7 +130,7 @@ section {
 .breadcrumbs h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
+  color:white;
   font-family: var(--font-secondary);
 }
 
@@ -246,13 +246,22 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  z-index: 997;
-  position: absolute;
+  position: fixed;
   padding: 30px 0;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  background-color: black;
+  border-bottom: 3px solid green;
 }
+
+
+
+header.scrolled {
+  background-color: black;
+}
+
 
 .header .logo img {
   max-height: 40px;
@@ -262,7 +271,7 @@ section {
 .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #010101;
   margin-bottom: 0;
   font-family: var(--font-primary);
 }
@@ -1170,9 +1179,7 @@ section {
   margin-bottom: 0;
 }
 
-#hero {
-  background-color: black;
-}
+
 
 
 /*--------------------------------------------------------------
@@ -1889,8 +1896,8 @@ section {
 }
 
 .hero .info h2 {
-  color: #fff;
-  margin-bottom: 30px;
+  color: white;
+  margin-bottom: 70px;
   padding-bottom: 30px;
   font-size: 56px;
   font-weight: 700;
@@ -2568,7 +2575,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background-color: black;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2675,4 +2682,60 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+.php-email-form {
+  margin: 30px auto 30px;
+  width: 100% !important;
+  max-width: 600px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 20px;
+}
+
+
+
+
+
+.php-email-form h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.php-email-form p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.php-email-form input,
+.php-email-form textarea {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+
+.php-email-form button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+#hero {
+  margin-top: -100px;
 }
