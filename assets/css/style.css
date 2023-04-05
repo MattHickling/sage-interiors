@@ -1,0 +1,215 @@
+body {
+    /* background: url('background-image.jpg') no-repeat center center fixed;  */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+/* Style for the landing page */
+.landing-page {
+	background-color: var(--grey);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.landing-page h1 {
+	color: var(--white);
+	font-size: 3rem;
+	text-align: center;
+}
+
+#welcome h1 {
+    font-size: 4em;
+    margin: 0 0 0.2em;
+}
+
+#welcome p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.strap{
+    color: black;
+    text-align: center;
+}
+
+/* Define color variables for easy use */
+:root {
+	--grey: #777;
+	--black: #000;
+	--sage-green: #8F9779;
+	--white: #fff;
+}
+
+/* Reset default margin and padding for all elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Set font and background color for the entire page */
+body {
+	font-family: Arial, sans-serif;
+	color: var(--grey);
+	background-color: var(--white);
+}
+
+/* Style for the navigation bar */
+/* Style for the navigation bar */
+.navbar {
+	background-color: var(--grey);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar a {
+	color: var(--white);
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+
+/* Style for headings */
+h1, h2, h3, h4, h5, h6 {
+	color: var(--black);
+	margin-bottom: 10px;
+}
+
+/* Style for sections */
+section {
+	padding: 50px;
+}
+
+/* Style for paragraphs */
+p {
+	margin-bottom: 20px;
+}
+
+/* Style for unordered lists */
+ul {
+	list-style: disc;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+/* Style for testimonials */
+#testimonials {
+	background-color: var(--sage-green);
+	color: var(--white);
+	padding: 50px;
+}
+
+/* Style for carousel */
+.carousel {
+	/* Insert your own styles for the carousel here */
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+  form button {
+    background-color: #83b692;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #5f9474;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    margin-bottom: 5px;
+  }
+  
+  .gallery {
+    display: none;
+    /* Set a fixed height for the gallery container */
+    height: 500px;
+    /* Set overflow to auto to enable scrolling */
+    overflow: auto;
+}
+
+.gallery img {
+    /* Remove fixed width and height for the gallery images */
+    width: 300px;
+    height: 300px;
+    /* Add some margin to the images for spacing */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
