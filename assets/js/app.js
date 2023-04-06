@@ -24,17 +24,19 @@ $(document).ready(function() {
     var acceptCookies = document.getElementById("accept-cookies");
     var rejectCookies = document.getElementById("reject-cookies");
   
-    acceptCookies.addEventListener("click", function() {
+    acceptCookies.addEventListener("click touchstart", function() {
       cookiePopup.style.display = "none";
       // Set a cookie to remember that the user has accepted cookies
       document.cookie = "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     });
-  
-    rejectCookies.addEventListener("click", function() {
+    
+    rejectCookies.addEventListener("click touchstart", function() {
       cookiePopup.style.display = "none";
       // Set a cookie to remember that the user has rejected cookies
       document.cookie = "cookies_accepted=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     });
+    
+    
   
     // Check if the user has already accepted or rejected cookies
     var cookiesAccepted = document.cookie.indexOf("cookies_accepted=true") !== -1;
@@ -56,22 +58,22 @@ const options = {
   threshold: 0.5
 };
 
-// Create the IntersectionObserver
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    // Check if the image is intersecting with the viewport
-    if (entry.isIntersecting) {
-      // Replace the data-src attribute with src to load the image
-      entry.target.src = entry.target.dataset.src;
-      // Remove the data-src attribute to avoid loading the image again
-      entry.target.removeAttribute('data-src');
-      // Unobserve the image
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
+// // Create the IntersectionObserver
+// const observer = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     // Check if the image is intersecting with the viewport
+//     if (entry.isIntersecting) {
+//       // Replace the data-src attribute with src to load the image
+//       entry.target.src = entry.target.dataset.src;
+//       // Remove the data-src attribute to avoid loading the image again
+//       entry.target.removeAttribute('data-src');
+//       // Unobserve the image
+//       observer.unobserve(entry.target);
+//     }
+//   });
+// }, options);
 
 // Observe all the images
-images.forEach(image => {
-  observer.observe(image);
-});
+// images.forEach(image => {
+//   observer.observe(image);
+// });
