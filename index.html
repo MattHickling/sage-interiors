@@ -14,11 +14,35 @@
     <!-- fontawesome -------------------------------------->
     <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
 
-    
+  
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+      
+      
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+   
+      
 </head>
 <body>
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="c3v9WV45"></script> 
+
+
+<div id="cookie-popup">
+    <p>We use cookies to improve your experience. Click "Accept" to continue or "Reject" to disable cookies.</p>
+    <button id="accept-cookies">Accept</button>
+    <button id="reject-cookies">Reject</button>
+  </div>
+  
+<section class="content"></section>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">Sage Interiors</a>
+        <!-- <a class="navbar-brand" href="#"><img src="assets/img/SAGEinteriorsLogo.png" alt="Sage Interiors"></a> -->
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,13 +52,19 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Projects</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -42,102 +72,183 @@
       
 
     <div class="landing-page">
-        <h1>Welcome to Sage Interiors</h1>
+        <h1><img src="assets/img/SAGEinteriorsLogo.png" alt="Sage Interiors"></h1>
       
     </div>
     
-	<section id="about">
-        <p class="strap">We specialize in providing high-quality plastering, drylining, and suspended ceiling services <br> to residential and commercial clients.</p>
-	</section>
-	<section id="about">
+    <section id="about" class="about-strap">
+        <p class="strap">Bristol's Plastering and drylining specialists</p>
+      </section>
+      
+      <section id="about" class="about-us">
         <h2>About Us</h2>
-        <p>Sage Interiors is a full-service interior contracting company that specializes in providing high-quality plastering, drylining, and suspended ceiling services to residential and commercial clients. Our team of skilled professionals has years of experience and is dedicated to delivering exceptional results on every project we undertake.</p>
-        <p>We take pride in our commitment to quality and customer satisfaction, and we strive to exceed our clients' expectations on every project. Whether you need plastering, drylining, or suspended ceilings for your home or business, we have the expertise and experience to get the job done right.</p>
-        <p>Contact us today to learn more about our services and how we can help you transform your interior spaces.</p>
-    </section>
+        <p>At Sage Interiors, we are committed to providing exceptional plastering, drylining, partitioning, and suspended ceiling services that meet the highest standards of quality and craftsmanship. With years of experience in the industry, we have developed a reputation for excellence that we are proud to uphold. Our team of skilled professionals is dedicated to delivering the best possible results for our clients, no matter how complex or challenging the project may be.<br><br>
+
+            We understand that every project is unique, which is why we take the time to listen to our clients' needs and work closely with them to create custom solutions that meet their specific requirements. Whether you need plastering, drylining, partitioning, or suspended ceiling services, we have the expertise and resources to get the job done right, on time, and within budget. From start to finish, we are committed to providing a hassle-free, stress-free experience that exceeds your expectations.<br><br>
+            
+            At Sage Interiors, we pride ourselves on our attention to detail, our commitment to quality, and our dedication to customer satisfaction. If you're looking for a reliable, trustworthy, and professional plastering, drylining, partitioning, and suspended ceiling company, look no further than Sage Interiors. Contact us today to learn more about our services and how we can help you achieve your goals.</p>
+      </section>
+      
+
+    <section id="services">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/img/projects/bathroomceiling.png" alt="Service 1">
+          </div>
+          <div class="card-content">
+            <h2>Plastering</h2>
+            <p>Our plastering service includes the application of plaster to walls and ceilings to achieve a smooth and even finish. We use high-quality materials and techniques to ensure a professional result.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/img/projects/longashton.png" alt="Service 2">
+          </div>
+          <div class="card-content">
+            <h2>Drylining and Partitioning</h2>
+            <p>Whether you need a single partition or new offices, we can design and install a solution that meets your needs. We provide a comprehensive drylining service, including installation, finishing, and repair work.</p>
+          </div>
+        </div>
+        <!-- <div class="card">
+          <div class="card-image">
+            <img src="assets/img/projects/doorway.png" alt="Service 3">
+          </div>
+          <div class="card-content">
+            <h2>Partitioning</h2>
+            <p>We can create stylish and functional partition walls to divide your space and create separate areas for different uses. Whether you need a single partition or a complete room makeover, we can design and install a solution that meets your needs.</p>
+          </div>
+        </div> -->
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/img/projects/suspendedCeilingFilton.png" alt="Service 4">
+          </div>
+          <div class="card-content">
+            <h2>Suspended Ceilings</h2>
+            <p>Suspended ceilings are a practical and cost-effective way to enhance the appearance and functionality of a commercial office space. We offer a range of suspended ceiling solutions, including acoustic ceilings, fire-rated ceilings, and more.</p>
+          </div>
+        </div>
+      </section>
+      
+      
     
-	<section id="services">
-		<h2>Our Services</h2>
-		<ul>
-			<li>Plastering</li>
-			<li>Drylining</li>
-			<li>Suspended Ceilings</li>
-		</ul>
-	</section>
-    <section id="testimonials">
-		<h2>Testimonials</h2>
-        <div class="carousel slide" data-ride="carousel" data-interval="5000" id="testimonial-carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption">
-                  <h3>Testimonial 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <h3>Testimonial 2</h3>
-                  <p>Nullam euismod enim ac felis ullamcorper, sit amet maximus tellus fringilla.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-caption">
-                  <h3>Testimonial 3</h3>
-                  <p>Sed ac felis et quam ultricies scelerisque sed eu ex.</p>
-                </div>
+      <section id="testimonials">
+        <div class="testimonial-header">
+          <h2 class="testimonial-title">Testimonials</h2>
+          <p class="testimonial-description">Take a look at what our clients have to say about us.</p>
+        </div>
+        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial text-center">
+                <p>Top Lad and Excellent workmanship. Happy to help however he could which was very much appreciated. Will use again and keep in touch Danny. Many thanks again, Paul</p>
+                <p class="author">- Paul Newman</p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <div class="testimonial text-center">
+                <p>Reliable, quality and quick service. Sage interiors arrived on time and skimmed our whole upstairs to a great standard. Easily to decorate over, would definitely recommend. Thank you 👍🏽.</p>
+                <p class="author">- Jenna Micha Geuley</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial text-center">
+                <p>Danny done an outstanding job with our living room walls and ceiling!
+                    Very reliable, professional and helpful.
+                    would highly recommend to everyone!
+                    Thanks Danny. 😊😊</p>
+                <p class="author">- Andrea Carnell</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial text-center">
+                  <p>Danny done an excellent job in our front room + upstairs bedroom walls and ceiling, good price and reliable 👍 10/10 recommend</p>
+                  <p class="author">- Robert Goscombe-Best</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial text-center">
+                  <p>Great job! Professional, punctual, and produced a flawless finish on my high landing ceiling. Would highly recommend! </p>
+                  <p class="author">- Alistair Swan</p>
+                </div>
+              </div>
+            
           </div>
+          <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
           
-	</section>
+          
+        </div>
+      </section>
+      
+    <section>
+        <div id="work"></div>
+        <h2 class="work">Our Work</h2>
+      <p class="work-strap">At Sage Interiors, we take pride in our ability to handle a wide range of domestic and commercial projects. Our team of experienced professionals have the skills and expertise to deliver top-quality work, regardless of the size or complexity of the project.
 
+        When it comes to domestic work, we specialize in providing a range of services, including plastering, drylining, and partitioning. Our team has the knowledge and experience to get the job done right.
+        
+        In addition to our domestic work, we also take on a variety of commercial projects. Our team has experience working on projects of all sizes, from small retail spaces to large office buildings. We understand the unique needs of commercial clients and work closely with our customers to ensure that their projects are completed on time and within budget.</p>
+    
+        <br><br> Take a look at some of our previous project.
+    
+    </section>
+
+
+      
     <div class="gallery" id="gallery">
-        <img src="assets/img/projects/bathroomceiling.png" alt="Image 1">
-        <img src="assets/img/projects/doorway.png" alt="Image 2">
-        <img src="assets/img/projects/firstfloorceiling.png" alt="Image 3">
-        <img src="assets/img/projects/homeoffice.png" alt="Image 4">
-        <img src="assets/img/projects/largelivingspace.png" alt="Image 5">
-        <img src="assets/img/projects/livingroomceiling.png" alt="Image 6">
-        <img src="assets/img/projects/longashton.png" alt="Image 7">
-        <img src="assets/img/projects/repairopening.png" alt="Image 8">
-        <img src="assets/img/projects/suspendedCeilingFilton.png" alt="Image 9">
-        <img src="assets/img/projects/suspendedCeilingFilton.png" alt="Image 10">
-        <img src="assets/img/projects/bathroomceiling.png" alt="Image 1">
-        <img src="assets/img/projects/doorway.png" alt="Image 2">
-    </div>
+        <img data-src="assets/img/projects/bathroomceiling.png" alt="Image 1">
+        <img data-src="assets/img/projects/doorway.png" alt="Image 2">
+        <img data-src="assets/img/projects/firstfloorceiling.png" alt="Image 3">
+        <img data-src="assets/img/projects/homeoffice.png" alt="Image 4">
+        <img data-src="assets/img/projects/largelivingspace.png" alt="Image 5">
+        <img data-src="assets/img/projects/livingroomceiling.png" alt="Image 6">
+        <img data-src="assets/img/projects/longashton.png" alt="Image 7">
+        <img data-src="assets/img/projects/repairopening.png" alt="Image 8">
+        <img data-src="assets/img/projects/suspendedCeilingFilton.png" alt="Image 9">
+        <img data-src="assets/img/projects/suspendedCeilingFilton.png" alt="Image 10">
+        <img data-src="assets/img/projects/bathroomceiling.png" alt="Image 1">
+        <img data-src="assets/img/projects/doorway.png" alt="Image 2">
+      </div>
+      
+
+
 
     <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt, erat a pellentesque tincidunt, sem leo dapibus justo, sit amet malesuada orci tellus et leo. Sed scelerisque turpis sit amet mi bibendum laoreet. Aenean commodo leo non lacinia lobortis. Quisque porta orci vitae convallis sagittis. Aliquam malesuada velit sed turpis laoreet, eget pharetra odio lacinia. Donec iaculis quis odio quis eleifend. Vestibulum sed vestibulum diam, in malesuada massa. Maecenas tincidunt justo felis, id interdum mauris tincidunt vel. In non est non magna bibendum molestie.</p>
 
-	<section id="contact">
-		<h2>Contact Us</h2>
-		<p>Insert contact information for Sage Interiors here.</p>
-        <form action="submit-form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-        
-            <button type="submit">Send</button>
-        </form>
-        
-	</section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any project requirements, please contact us using the form below.</p>
+            <form action="submit-form.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <button type="submit">Send</button>
+            </form>
+            <div class="follow-us">
+              <h3>Follow us on Facebook</h3>
+            
+              <div class="fb-page" data-href="https://m.facebook.com/sageinteriorss/?ref=sharing&amp;__tn__=%7E%7E&amp;__nodl&amp;refsrc=deprecated&amp;_rdr" data-tabs="timeline" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://m.facebook.com/sageinteriorss/?ref=sharing&amp;__tn__=%7E%7E&amp;__nodl&amp;refsrc=deprecated&amp;_rdr" class="fb-xfbml-parse-ignore"><a href="https://m.facebook.com/sageinteriorss/?ref=sharing&amp;__tn__=%7E%7E&amp;__nodl&amp;refsrc=deprecated&amp;_rdr">Sage interiors</a></blockquote></div>
+            
+            </div>
+          </section>
+          
+
 	
     <footer>
         <div class="footer-content">
-          <h3>Sage Interiors</h3>
+          <h3><img src="assets/img/SAGEinteriorsLogo.png" alt="Sage Interiors"></h3>
           <p>35 Goldney Avenue, Warmley, Bristol, BS30 5JG</p>
           <p>Phone: 07538016478</p>
           <p>Email: hello@sage-interiors.co.uk</p>
@@ -150,11 +261,12 @@
 
     <!-- bootstrap ---------------------------------->
     <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <!-- Fontawesome---------------------------------->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="assets/fontawesome/js/fontawesome.min.js"></script>
 
-
+</div>
    
 </body>
 </html>

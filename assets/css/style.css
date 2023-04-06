@@ -1,9 +1,24 @@
+/* Define color variables for easy use */
+:root {
+	--grey: #777;
+	--black: #000;
+	--sage-green: #8F9779;
+	--white: #fff;
+}
+
+
 body {
     /* background: url('background-image.jpg') no-repeat center center fixed;  */
     background-size: cover;
     margin: 0;
     padding: 0;
 }
+
+.navbar {
+    color: #fff;
+}
+
+
 
 #welcome {
     position: absolute;
@@ -14,6 +29,13 @@ body {
     text-align: center;
 }
 
+
+
+span a .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+
 /* Style for the landing page */
 .landing-page {
 	background-color: var(--grey);
@@ -22,7 +44,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+    width: 100%;
 }
+
+body {
+    overflow-x:hidden;
+  }
 
 .landing-page h1 {
 	color: var(--white);
@@ -31,7 +58,7 @@ body {
 }
 
 #welcome h1 {
-    font-size: 4em;
+    font-size: 6em;
     margin: 0 0 0.2em;
 }
 
@@ -40,17 +67,46 @@ body {
     margin: 0;
 }
 
+
+#about.about-strap {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+#about{
+    margin: 10px;
+}
+
+#about.about-us {
+  padding: 50px 0;
+  background-color: var(--sage-green);
+  color: var(--white);
+}
+
+.about-us h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin: 10px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.about-us p:last-of-type {
+  margin-bottom: 0;
+}
+
+
 .strap{
     color: black;
     text-align: center;
-}
-
-/* Define color variables for easy use */
-:root {
-	--grey: #777;
-	--black: #000;
-	--sage-green: #8F9779;
-	--white: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration:solid;
 }
 
 /* Reset default margin and padding for all elements */
@@ -64,31 +120,38 @@ body {
 	font-family: Arial, sans-serif;
 	color: var(--grey);
 	background-color: var(--white);
+   padding-right: -18%;
 }
 
 /* Style for the navigation bar */
 /* Style for the navigation bar */
 .navbar {
 	background-color: var(--grey);
-	color: var(--white);
+	/* color: var(--white); */
 	display: flex;
 	justify-content: center;
 	padding: 10px;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 0;
+    height: 12%;
+    height: 15%;
+    color: white !important;
 }
 
+
 .navbar a {
-	color: var(--white);
+	/* color: var(--white); */
 	margin: 0 10px;
 	text-decoration: none;
+    color: white !important;
 }
 
 .navbar a:hover {
 	text-decoration: underline;
 }
+
 
 
 /* Style for headings */
@@ -121,19 +184,142 @@ ul {
 	padding: 50px;
 }
 
-/* Style for carousel */
-.carousel {
-	/* Insert your own styles for the carousel here */
-}
+.testimonial-header {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .testimonial-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .testimonial-description {
+    font-size: 1.2rem;
+  }
+  
 
+
+#testimonial-carousel {
+    position: relative;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    margin-bottom: 60%;
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: url("path/to/prev-icon.png");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("path/to/next-icon.png");
+  }
+
+    .author {
+    font-style: italic;
+  }
+
+  #testimonial-carousel {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20%;
+    background-color: var(--white);
+    color: var(--black);
+  }
+  
+  #testimonial-carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    height: auto;
+    padding: 20px;
+  }
+  
+  .carousel-item {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .testimonial {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+  
+  .author {
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  section#testimonials{
+    height: 20%;
+  }
+  
+  
 form {
     margin: 0 auto;
     max-width: 500px;
     text-align: center;
+    
   }
   
   form label {
-    display: block;
+    /* display: block; */
     font-weight: bold;
     margin-top: 20px;
   }
@@ -173,43 +359,266 @@ form {
     background-color: #222;
     color: #fff;
     padding: 20px;
+    position: relative; /* add position relative to footer */
+    height: 400px
   }
   
   .footer-content {
     max-width: 800px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-top: 200px;
     text-align: center;
+    position: relative; /* add position relative to footer content */
   }
   
   footer h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    margin-bottom: 200px;
   }
   
   footer p {
     margin-bottom: 5px;
   }
   
-  .gallery {
-    display: none;
-    /* Set a fixed height for the gallery container */
-    height: 500px;
-    /* Set overflow to auto to enable scrolling */
-    overflow: auto;
-}
-
-.gallery img {
-    /* Remove fixed width and height for the gallery images */
-    width: 300px;
-    height: 300px;
-    /* Add some margin to the images for spacing */
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-.gallery {
+  .footer-content img {
+    position: absolute;
+    top: -300px; /* adjust as needed to move the image on top of the text */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* set z-index higher than the text */
+  }
+  
+  #gallery {
     display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #gallery img {
+    flex-basis: 20%;
+    margin: 10px;
+    width: 20%;
+    height: 250px;
+  }
+  
+  #services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 30px;
+  }
+  
+  .card {
+    flex: 0 0 calc(50% - 15px);
+    min-height: 500px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 500px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-image::before {
+    content: "";
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 150px;
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+  }
+  
+  .card-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    height: 250px;
+    overflow: hidden;
+    color: #666;
+  }
+  
+  @media (max-width: 1120px) {
+    #services {
+      justify-content: center;
+      width: 100%;
+      margin: 5px;
+    }
+   
+    
+    .card {
+      flex-basis: 100%;
+      max-width: 600px;
+    }
+  }
+  
+  #testimonials {
+    height: 300px;
+  }
+
+  h2.testimonial-title{
+    color:gold;
+  }
+  
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 6%;
+  }
+  
+  .gallery img {
+    flex-basis: 20%;
+    margin: 10px;
+    min-width: 250px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery img {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (max-width: 7544px) {
+    .gallery img {
+      margin-left: 30%;
+    }
+  }
+  
+
+  #contact {
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+  
+  #contact h2,
+  #contact p {
+    color: #333;
+  }
+  
+  #contact form {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #contact form label {
+    /* display: block; */
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  #contact form input:focus,
+  #contact form textarea:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+  #contact form button {
+    background-color: #83b692;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background-color: #5f9474;
+  }
+  
+  #contact .follow-us {
+    margin-top: 20px;
+  }
+  
+  #cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #83b692; /* change the background color to match the button color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* add a z-index to ensure the popup is on top of other content */
+  }
+  
+  #cookie-popup p {
+    margin: 0;
+  }
+  
+  #cookie-popup button {
+    background-color: #fff; /* change the button background color to match the form input background color */
+    color: #83b692; /* change the button color to match the form button color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #cookie-popup button:hover {
+    background-color: #f5f5f5; /* change the button background color on hover to match the form input background color */
+  }
+  
+ 
+  
+ 
+  
+ 
+  
   
